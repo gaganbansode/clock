@@ -1,0 +1,66 @@
+.clock {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    /* background-color: rgba(0,0,0,0.15); */
+    border-radius: 200px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    margin: auto;
+    /* box-shadow: 0px 0px 10px rgba(0,0,0,0.2);  */
+    background-image: url('./clock.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hour {
+    position: absolute;
+    background-color: red;
+    width: 8px;
+    height: 150px;
+    top: 50px;
+    left: 200px;
+    border-radius: 4px;
+    animation: hourNeedle 60s infinite;
+    transform-origin: bottom center;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes hourNeedle {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  
+  .minutes {
+    position: absolute;
+    background-color: red;
+    width: 6px;
+    height: 180px;
+    top: 20px;
+    left: 200px;
+    border-radius: 3px;
+    animation: minuteNeedle 1s infinite;
+    transform-origin: bottom center;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes minuteNeedle {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  
+  .circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255,0,0);
+    border-radius: 200px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    margin: auto;
+   
+  }
